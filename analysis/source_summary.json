@@ -1,0 +1,95 @@
+{
+  "classification": "FICTIONAL SIMULATION — NOT HUMAN PARTICIPANT DATA",
+  "batch_id": "SIM70-20261113-A",
+  "counts": {
+    "participants": 70,
+    "tasks": 560,
+    "feedback": 70
+  },
+  "sequence_counts": {
+    "S1": 21,
+    "S2": 18,
+    "S3": 14,
+    "S4": 17
+  },
+  "manual_first": 35,
+  "ai_first": 35,
+  "fictional_schedule": {
+    "start": "2026-09-28",
+    "end": "2026-11-08",
+    "timezone": "Asia/Kuala_Lumpur",
+    "active_dates": 33,
+    "weekend_sessions": 14,
+    "weekday_sessions": 56,
+    "time_bands": {
+      "morning": 24,
+      "afternoon": 19,
+      "evening": 27
+    },
+    "max_sessions_on_one_date": 6
+  },
+  "manual": {
+    "mean_accuracy": 0.875,
+    "mean_duration_seconds": 219.51,
+    "mean_confidence": 4.46,
+    "mean_workload": 4.07
+  },
+  "ai": {
+    "mean_accuracy": 0.9,
+    "mean_duration_seconds": 188.22,
+    "mean_confidence": 4.33,
+    "mean_workload": 3.53
+  },
+  "task_summary": {
+    "A1": {
+      "mean_accuracy": 0.9143,
+      "mean_duration_seconds": 171.16
+    },
+    "A2": {
+      "mean_accuracy": 0.8879,
+      "mean_duration_seconds": 209.71
+    },
+    "A3": {
+      "mean_accuracy": 0.8648,
+      "mean_duration_seconds": 217.86
+    },
+    "A4": {
+      "mean_accuracy": 0.8363,
+      "mean_duration_seconds": 235.77
+    },
+    "B1": {
+      "mean_accuracy": 0.9253,
+      "mean_duration_seconds": 165.87
+    },
+    "B2": {
+      "mean_accuracy": 0.9176,
+      "mean_duration_seconds": 199.93
+    },
+    "B3": {
+      "mean_accuracy": 0.8967,
+      "mean_duration_seconds": 206.81
+    },
+    "B4": {
+      "mean_accuracy": 0.8572,
+      "mean_duration_seconds": 223.81
+    }
+  },
+  "individual_variation": {
+    "accuracy_min": 0.7116,
+    "accuracy_max": 1,
+    "mean_seconds_min": 121.1,
+    "mean_seconds_max": 320.5
+  },
+  "preference_counts": {
+    "Manual": 14,
+    "AI-assisted": 36,
+    "No preference": 20
+  },
+  "integrity": {
+    "unique_participant_codes": 70,
+    "unique_database_ids": 70,
+    "participants_with_8_tasks": 70,
+    "participants_with_feedback": 70,
+    "duplicate_task_submissions": 0
+  }
+}

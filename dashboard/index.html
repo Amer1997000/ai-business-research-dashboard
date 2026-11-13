@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive portfolio dashboard for a fictional 70-participant business-document processing experiment simulation.">
+  <title>AI-Assisted Document Processing — Simulation Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to dashboard</a>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Data analyst · business analyst portfolio</p>
+      <h1>AI-assisted vs manual document review</h1>
+      <p class="subtitle">70-Participant Experiment Simulation — Portfolio Demonstration</p>
+    </div>
+    <div class="simulation-badge">Synthetic TEST data</div>
+  </header>
+
+  <main id="main">
+    <section class="controls" aria-label="Dashboard filters">
+      <div><label for="sequenceFilter">Sequence</label><select id="sequenceFilter"><option value="all">All sequences</option><option>S1</option><option>S2</option><option>S3</option><option>S4</option></select></div>
+      <div><label for="conditionFilter">Condition</label><select id="conditionFilter"><option value="all">Manual + AI</option><option value="manual">Manual</option><option value="ai">AI-assisted</option></select></div>
+      <p id="filterStatus" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">Overview</p><h2 id="overview-title">Experiment at a glance</h2></div><p>Completed crossover sessions using fictional invoices and purchase orders.</p></div>
+      <div class="kpi-grid" id="kpis"></div>
+    </section>
+
+    <section aria-labelledby="performance-title">
+      <div class="section-heading"><div><p class="eyebrow">Performance</p><h2 id="performance-title">Accuracy and processing time</h2></div><p>Participant-level paired comparison across both review methods.</p></div>
+      <div class="panel-grid two">
+        <article class="panel"><div class="panel-title"><h3>Mean accuracy</h3><span>Correct fields out of 13</span></div><div id="accuracyChart" class="chart"></div></article>
+        <article class="panel"><div class="panel-title"><h3>Mean task duration</h3><span>Seconds per document pair</span></div><div id="durationChart" class="chart"></div></article>
+      </div>
+      <div class="panel-grid two">
+        <article class="panel wide"><div class="panel-title"><h3>Accuracy by task</h3><span>A1–A4 and B1–B4</span></div><div id="taskAccuracyChart" class="chart tall"></div></article>
+        <article class="panel wide"><div class="panel-title"><h3>Duration by task and condition</h3><span>Assigned method after sequence filtering</span></div><div id="taskDurationChart" class="chart tall"></div></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">Participant experience</p><h2 id="experience-title">Confidence, workload and preference</h2></div><p>Feedback collected after all eight tasks.</p></div>
+      <div class="panel-grid three">
+        <article class="panel"><div class="panel-title"><h3>Confidence</h3><span>Mean rating, 1–5</span></div><div id="confidenceChart" class="chart"></div></article>
+        <article class="panel"><div class="panel-title"><h3>Perceived workload</h3><span>Mean rating, 1–5</span></div><div id="workloadChart" class="chart"></div></article>
+        <article class="panel"><div class="panel-title"><h3>Preferred method</h3><span>Final questionnaire</span></div><div id="preferenceChart" class="chart"></div></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="design-title">
+      <div class="section-heading"><div><p class="eyebrow">Experiment design</p><h2 id="design-title">Randomized crossover allocation</h2></div><p>Every participant completed manual and AI-assisted periods without repeating documents.</p></div>
+      <div class="panel-grid two">
+        <article class="panel"><div class="panel-title"><h3>Sequence distribution</h3><span>S1–S4 random assignment</span></div><div id="sequenceChart" class="chart"></div></article>
+        <article class="panel"><div class="panel-title"><h3>Method order</h3><span>Manual-first vs AI-first</span></div><div id="orderChart" class="chart"></div></article>
+      </div>
+      <article class="panel table-panel"><div class="panel-title"><h3>Sequence-level results</h3><span>Descriptive means</span></div><div class="table-wrap"><table><thead><tr><th>Sequence</th><th>Participants</th><th>Manual accuracy</th><th>AI accuracy</th><th>Manual seconds</th><th>AI seconds</th></tr></thead><tbody id="sequenceTable"></tbody></table></div></article>
+    </section>
+
+    <section aria-labelledby="activity-title">
+      <div class="section-heading"><div><p class="eyebrow">Session activity</p><h2 id="activity-title">Fictional participation schedule</h2></div><p>Simulated timestamps in Asia/Kuala_Lumpur—not actual participation dates.</p></div>
+      <div class="panel-grid two">
+        <article class="panel wide"><div class="panel-title"><h3>Sessions by simulated date</h3><span>28 Sep–8 Nov 2026</span></div><div id="activityChart" class="chart tall"></div></article>
+        <article class="panel"><div class="panel-title"><h3>Day and time mix</h3><span>Schedule composition</span></div><div id="scheduleChart" class="chart tall"></div></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="individual-title">
+      <div class="section-heading"><div><p class="eyebrow">Individual variation</p><h2 id="individual-title">Participant-level differences</h2></div><p>Each point compares the same simulated participant under both methods.</p></div>
+      <article class="panel"><div class="panel-title"><h3>Accuracy difference vs time difference</h3><span>AI minus manual; hover or focus for details</span></div><div id="scatterChart" class="chart scatter"></div></article>
+    </section>
+
+    <section class="methodology" aria-labelledby="method-title">
+      <div><p class="eyebrow">Methodology</p><h2 id="method-title">Controlled crossover simulation</h2><p>Seventy fictional profiles completed eight tasks through the deployed TEST workflow. Random assignment determined sequence S1–S4. Each participant completed both manual and AI-assisted conditions with matched document sets. Accuracy scores compare eight extracted fields and five discrepancy categories against the researcher answer key.</p></div>
+      <div><p class="eyebrow">Limitations</p><h2>Portfolio demonstration, not causal evidence</h2><p>All observations, personas, timings and feedback are synthetic. Confidence intervals describe the simulation generator only. They cannot establish real-world productivity gains, human behavior, or AI effectiveness. Simulated dates are scheduling metadata rather than actual participation dates.</p></div>
+    </section>
+  </main>
+
+  <footer><p>Batch SIM70-20261113-A · Fictional simulation · No personal data</p></footer>
+  <script src="data/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

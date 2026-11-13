@@ -1,0 +1,192 @@
+{
+  "classification": "FICTIONAL SIMULATION — NOT HUMAN PARTICIPANT DATA",
+  "batch_id": "SIM70-20261113-A",
+  "generated_at": "2026-11-13T06:38:33.843Z",
+  "counts": {
+    "participants": 70,
+    "completed_sessions": 70,
+    "tasks": 560,
+    "feedback": 70,
+    "manual_first": 35,
+    "ai_first": 35
+  },
+  "means": {
+    "manual_accuracy": 0.875,
+    "ai_accuracy": 0.9,
+    "manual_duration": 219.51,
+    "ai_duration": 188.22,
+    "manual_confidence": 4.46,
+    "ai_confidence": 4.33,
+    "manual_workload": 4.07,
+    "ai_workload": 3.53
+  },
+  "sequence_counts": {
+    "S1": 21,
+    "S2": 18,
+    "S3": 14,
+    "S4": 17
+  },
+  "preference_counts": {
+    "AI-assisted": 36,
+    "Manual": 14,
+    "No preference": 20
+  },
+  "task_stats": {
+    "A1": {
+      "accuracy": 0.9143,
+      "duration_seconds": 171.16
+    },
+    "A2": {
+      "accuracy": 0.8879,
+      "duration_seconds": 209.71
+    },
+    "A3": {
+      "accuracy": 0.8648,
+      "duration_seconds": 217.86
+    },
+    "A4": {
+      "accuracy": 0.8363,
+      "duration_seconds": 235.77
+    },
+    "B1": {
+      "accuracy": 0.9253,
+      "duration_seconds": 165.87
+    },
+    "B2": {
+      "accuracy": 0.9176,
+      "duration_seconds": 199.93
+    },
+    "B3": {
+      "accuracy": 0.8967,
+      "duration_seconds": 206.81
+    },
+    "B4": {
+      "accuracy": 0.8572,
+      "duration_seconds": 223.81
+    }
+  },
+  "sequence_stats": {
+    "S1": {
+      "participants": 21,
+      "manual_accuracy": 0.8718,
+      "ai_accuracy": 0.9103,
+      "manual_duration": 227.69,
+      "ai_duration": 194.12
+    },
+    "S2": {
+      "participants": 18,
+      "manual_accuracy": 0.8558,
+      "ai_accuracy": 0.8558,
+      "manual_duration": 212.11,
+      "ai_duration": 186.72
+    },
+    "S3": {
+      "participants": 14,
+      "manual_accuracy": 0.8819,
+      "ai_accuracy": 0.886,
+      "manual_duration": 215.93,
+      "ai_duration": 194.14
+    },
+    "S4": {
+      "participants": 17,
+      "manual_accuracy": 0.8937,
+      "ai_accuracy": 0.9457,
+      "manual_duration": 220.19,
+      "ai_duration": 177.65
+    }
+  },
+  "activity": {
+    "2026-10-23": 3,
+    "2026-10-27": 2,
+    "2026-10-25": 2,
+    "2026-10-02": 4,
+    "2026-10-07": 2,
+    "2026-11-05": 2,
+    "2026-10-21": 3,
+    "2026-11-01": 2,
+    "2026-10-14": 2,
+    "2026-10-28": 3,
+    "2026-11-04": 1,
+    "2026-10-20": 1,
+    "2026-10-12": 1,
+    "2026-09-30": 3,
+    "2026-10-10": 2,
+    "2026-10-06": 6,
+    "2026-10-24": 1,
+    "2026-10-17": 1,
+    "2026-11-08": 4,
+    "2026-10-30": 4,
+    "2026-11-06": 1,
+    "2026-09-28": 2,
+    "2026-10-22": 2,
+    "2026-11-02": 2,
+    "2026-10-15": 3,
+    "2026-10-31": 1,
+    "2026-10-16": 1,
+    "2026-10-09": 1,
+    "2026-10-26": 1,
+    "2026-10-13": 2,
+    "2026-10-19": 3,
+    "2026-09-29": 1,
+    "2026-11-07": 1
+  },
+  "paired_comparisons": [
+    {
+      "label": "Accuracy",
+      "unit": "proportion",
+      "n": 70,
+      "manual_mean": 0.875,
+      "ai_mean": 0.9,
+      "mean_difference_ai_minus_manual": 0.025,
+      "ci95_low": 0.0044,
+      "ci95_high": 0.0456,
+      "paired_t": 2.424,
+      "cohen_dz": 0.29
+    },
+    {
+      "label": "Task duration",
+      "unit": "seconds",
+      "n": 70,
+      "manual_mean": 219.5107,
+      "ai_mean": 188.2214,
+      "mean_difference_ai_minus_manual": -31.2893,
+      "ci95_low": -37.9042,
+      "ci95_high": -24.6744,
+      "paired_t": -9.437,
+      "cohen_dz": -1.128
+    },
+    {
+      "label": "Confidence",
+      "unit": "1–5 rating",
+      "n": 70,
+      "manual_mean": 4.4571,
+      "ai_mean": 4.3286,
+      "mean_difference_ai_minus_manual": -0.1286,
+      "ci95_low": -0.2745,
+      "ci95_high": 0.0174,
+      "paired_t": -1.758,
+      "cohen_dz": -0.21
+    },
+    {
+      "label": "Workload",
+      "unit": "1–5 rating",
+      "n": 70,
+      "manual_mean": 4.0714,
+      "ai_mean": 3.5286,
+      "mean_difference_ai_minus_manual": -0.5429,
+      "ci95_low": -0.6984,
+      "ci95_high": -0.3873,
+      "paired_t": -6.961,
+      "cohen_dz": -0.832
+    }
+  ],
+  "integrity": {
+    "participant_rows": 70,
+    "task_rows": 560,
+    "feedback_rows": 70,
+    "unique_participants": 70,
+    "participants_with_8_tasks": 70,
+    "participants_with_feedback": 70,
+    "duplicate_participant_task_rows": 0
+  }
+}
